@@ -34,7 +34,7 @@ public class HomeController {
         String goodNumber= Integer.toString(userData.size()-1);
         logme.logger.info("Number of records successful "+ goodNumber);
 
-        ArrayList<Data> badData = openCsv.badData;
+        ArrayList<Data> badData = openCsv.writeInBadCSV();
         String badNumber=Integer.toString(badData.size());
         logme.logger.info("Number of Failed Records "+ badNumber);
 

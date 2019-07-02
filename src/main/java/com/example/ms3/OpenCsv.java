@@ -3,35 +3,22 @@ package com.example.ms3;
 import com.opencsv.CSVWriter;
 import com.opencsv.bean.*;
 import com.opencsv.enums.CSVReaderNullFieldIndicator;
-import com.sun.deploy.ref.Helpers;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
+
 
 
 public class OpenCsv {
 
-
-    @Autowired
-    LoggingController log;
-
-
     private static final String myCSV = "./ms3interview.csv";
     private static final String badDataCSV ="./badData.csv";
-
-
-
-    ArrayList<Data> badData = new ArrayList<Data>();
-    int alldataPoints=0;
+    private  ArrayList<Data> badData = new ArrayList<Data>();
+    private int alldataPoints=0;
 
 
     public boolean nullValueChecker(Data data) { /// Test to see if any data objects contains
@@ -75,8 +62,6 @@ public class OpenCsv {
         return badData;
     }
 
-
-
     public void writeCSV(ArrayList<Data> bad){
         try {
             Writer writer = Files.newBufferedWriter(Paths.get(badDataCSV));
@@ -94,7 +79,6 @@ public class OpenCsv {
             //csvWriter = new CSVWriter(new FileWriter("bad-data.csv"));
 
     }
-
 
     public ArrayList<Data> CsvReader() {
         Reader reader = null;
@@ -157,7 +141,6 @@ public class OpenCsv {
 
         return goodData;
     }
-
 
     public String sendBackDataPoint(int alldataPoints){
        String allpoints= Integer.toString(alldataPoints);
