@@ -16,9 +16,14 @@ public class HomeController {
 
     LoggingController logme = new LoggingController();
 
-
     @RequestMapping("/")
-    public String adminView(){
+    public String homepage(){
+        return "index";
+    }
+
+
+    @RequestMapping("/work")
+    public String csvParse(){
 
         OpenCsv openCsv = new OpenCsv();
 
@@ -43,7 +48,7 @@ public class HomeController {
 
 
 
-        return "index";
+        return "work";
     }
 
 
