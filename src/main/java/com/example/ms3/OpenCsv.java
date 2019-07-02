@@ -1,13 +1,17 @@
 package com.example.ms3;
 
-import com.opencsv.bean.CsvToBean;
-import com.opencsv.bean.CsvToBeanBuilder;
+import com.opencsv.CSVWriter;
+import com.opencsv.bean.*;
 import com.opencsv.enums.CSVReaderNullFieldIndicator;
+import com.sun.deploy.ref.Helpers;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.Writer;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -18,10 +22,17 @@ public class OpenCsv {
 
 
     @Autowired
-    DataRepo dataRepo;
+    LoggingController log;
 
 
-    private static final String myCSV = "./falseData.csv";
+    private static final String myCSV = "./ms3interview.csv";
+    private static final String badDataCSV ="./badData.csv";
+
+
+
+    ArrayList<Data> badData = new ArrayList<Data>();
+    int alldataPoints=0;
+
 
     public boolean nullValueChecker(Data data) { /// Test to see if any data objects contains
         boolean mybool = false;
@@ -45,7 +56,43 @@ public class OpenCsv {
         } else if (data.getBooleanTwo().equalsIgnoreCase("")) {
             mybool = true;
         }
+        else{
+            mybool=false;
+        }
         return mybool;
+    }
+
+    public ArrayList<Data> writeInBadCSV(Data data){
+
+        badData.add(data);
+
+        return badData;
+    }
+
+    public ArrayList<Data> writeInBadCSV(){
+
+
+        return badData;
+    }
+
+
+
+    public void writeCSV(ArrayList<Data> bad){
+        try {
+            Writer writer = Files.newBufferedWriter(Paths.get(badDataCSV));
+
+            StatefulBeanToCsv ant = new StatefulBeanToCsvBuilder(writer)
+                    .withSeparator(CSVWriter.DEFAULT_SEPARATOR)
+                    .build();
+            bad = writeInBadCSV();
+            ant.write(bad);
+            writer.close();
+        }catch (Exception ee){
+            ee.printStackTrace();
+        }
+
+            //csvWriter = new CSVWriter(new FileWriter("bad-data.csv"));
+
     }
 
 
@@ -67,24 +114,25 @@ public class OpenCsv {
         Iterator<Data> csvUserIterator = csvToBean.iterator();
 
         ArrayList<Data> goodData = new ArrayList<Data>();
-        ArrayList<Data> badData = new ArrayList<Data>();
+
 
         //Counters
         int dataid = 1;
         int badcounter = 0;
+
 
         boolean tempOne = false;
 
 
         while (csvUserIterator.hasNext()) {
             Data data = csvUserIterator.next();
-            System.out.println(nullValueChecker(data));
-            tempOne = nullValueChecker(data); // This will check if any of the objects have variables that are null.
-            if (tempOne == true) {
+                alldataPoints++;
+            if (nullValueChecker(data)==true) {
                 badcounter++;
-                badData.add(data);
+                data.setId(badcounter);
+                writeInBadCSV(data);
                 System.out.println(badcounter);
-                System.out.println("Line of bad data added to arraylist ID: " + data.getId());
+
 
             } else {
                 data.setId(dataid++); //Generates an ID for the DB
@@ -98,9 +146,32 @@ public class OpenCsv {
 
             }
         }
-        
+
+
+
+
+
+        writeCSV(writeInBadCSV()); //Writes csv with all the bad data
+
+
+
         return goodData;
     }
+
+
+    public String sendBackDataPoint(int alldataPoints){
+       String allpoints= Integer.toString(alldataPoints);
+
+        return allpoints;
+    }
+
+    public String sendBackDataPoint(){
+        String allpoints= Integer.toString(alldataPoints);
+
+        return allpoints;
+    }
+
+
 }
 
 

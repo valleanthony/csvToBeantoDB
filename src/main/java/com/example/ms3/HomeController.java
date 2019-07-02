@@ -14,6 +14,7 @@ public class HomeController {
     @Autowired
     DataRepo dataRepo;
 
+    LoggingController logme = new LoggingController();
 
 
     @RequestMapping("/")
@@ -29,9 +30,16 @@ public class HomeController {
             dataRepo.save(user);
             System.out.println("New User saved " + user.getId());
         }
+        //Logging Section
+        String goodNumber= Integer.toString(userData.size()-1);
+        logme.logger.info("Number of records successful "+ goodNumber);
 
+        ArrayList<Data> badData = openCsv.badData;
+        String badNumber=Integer.toString(badData.size());
+        logme.logger.info("Number of Failed Records "+ badNumber);
 
-
+        String alldata = openCsv.sendBackDataPoint();
+        logme.logger.info("Number of All Records "+ alldata);
 
 
 
