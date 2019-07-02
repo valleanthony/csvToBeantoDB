@@ -1,0 +1,108 @@
+2019-07-02 12:46:47.698  INFO 51027 --- [restartedMain] com.example.ms3.Ms3Application           : Starting Ms3Application on Anthonys-MacBook-Pro.local with PID 51027 (/Users/Anthony/IdeaProjects/ms3/target/classes started by Anthony in /Users/Anthony/IdeaProjects/ms3)
+2019-07-02 12:46:47.702  INFO 51027 --- [restartedMain] com.example.ms3.Ms3Application           : No active profile set, falling back to default profiles: default
+2019-07-02 12:46:48.031  INFO 51027 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-02 12:46:48.032  INFO 51027 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-02 12:46:50.952  INFO 51027 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-02 12:46:51.320  INFO 51027 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 334ms. Found 1 repository interfaces.
+2019-07-02 12:46:52.275  INFO 51027 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f2a5480c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-02 12:46:52.926  INFO 51027 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-02 12:46:52.964  INFO 51027 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-02 12:46:52.965  INFO 51027 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-02 12:46:53.213  INFO 51027 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-02 12:46:53.214  INFO 51027 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5182 ms
+2019-07-02 12:46:53.640  INFO 51027 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-02 12:46:54.268  INFO 51027 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-02 12:46:54.426  INFO 51027 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-02 12:46:54.561  INFO 51027 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-02 12:46:54.564  INFO 51027 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-02 12:46:54.892  INFO 51027 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-02 12:46:55.136  INFO 51027 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-02 12:46:56.435  INFO 51027 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@16df7c41'
+2019-07-02 12:46:56.443  INFO 51027 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-02 12:46:56.546  INFO 51027 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-02 12:46:57.435  INFO 51027 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-02 12:46:57.528  WARN 51027 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-02 12:46:57.770  INFO 51027 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-02 12:46:58.052  INFO 51027 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-02 12:46:58.058  INFO 51027 --- [restartedMain] com.example.ms3.Ms3Application           : Started Ms3Application in 11.785 seconds (JVM running for 14.153)
+2019-07-02 12:47:02.468  INFO 51027 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-02 12:47:02.474  INFO 51027 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-02 12:47:02.551  INFO 51027 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 76 ms
+2019-07-02 12:47:23.446  INFO 51027 --- [Thread-33] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-02 12:47:23.463  INFO 51027 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-02 12:47:23.482  INFO 51027 --- [Thread-33] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-02 12:47:23.668  INFO 51027 --- [Thread-33] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-07-02 12:47:23.730  INFO 51027 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-02 12:47:23.779  INFO 51027 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-02 12:47:36.314  INFO 51047 --- [restartedMain] com.example.ms3.Ms3Application           : Starting Ms3Application on Anthonys-MacBook-Pro.local with PID 51047 (/Users/Anthony/IdeaProjects/ms3/target/classes started by Anthony in /Users/Anthony/IdeaProjects/ms3)
+2019-07-02 12:47:36.343  INFO 51047 --- [restartedMain] com.example.ms3.Ms3Application           : No active profile set, falling back to default profiles: default
+2019-07-02 12:47:36.730  INFO 51047 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-02 12:47:36.731  INFO 51047 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-02 12:47:42.558  INFO 51047 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-02 12:47:43.539  INFO 51047 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 835ms. Found 1 repository interfaces.
+2019-07-02 12:47:47.271  INFO 51047 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$404fd51b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-02 12:47:48.212  INFO 51047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-02 12:47:48.271  INFO 51047 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-02 12:47:48.273  INFO 51047 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-02 12:47:48.687  INFO 51047 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-02 12:47:48.688  INFO 51047 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11957 ms
+2019-07-02 12:47:48.928  INFO 51047 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-02 12:47:49.391  INFO 51047 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-02 12:47:49.478  INFO 51047 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-02 12:47:49.573  INFO 51047 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-02 12:47:49.575  INFO 51047 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-02 12:47:50.678  INFO 51047 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-02 12:47:52.107  INFO 51047 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-02 12:47:54.399  INFO 51047 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@12d23d22'
+2019-07-02 12:47:54.406  INFO 51047 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-02 12:47:54.471  INFO 51047 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-02 12:47:55.405  INFO 51047 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-02 12:47:55.486  WARN 51047 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-02 12:47:55.719  INFO 51047 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-02 12:47:56.051  INFO 51047 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-02 12:47:56.058  INFO 51047 --- [restartedMain] com.example.ms3.Ms3Application           : Started Ms3Application in 22.041 seconds (JVM running for 24.929)
+2019-07-02 12:48:09.467  INFO 51047 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-02 12:48:09.481  INFO 51047 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-02 12:48:09.492  INFO 51047 --- [Thread-54] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-02 12:48:09.596  INFO 51047 --- [Thread-54] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-07-02 12:48:09.599  INFO 51047 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-02 12:48:09.604  INFO 51047 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-02 12:48:21.007  INFO 51083 --- [restartedMain] com.example.ms3.Ms3Application           : Starting Ms3Application on Anthonys-MacBook-Pro.local with PID 51083 (/Users/Anthony/IdeaProjects/ms3/target/classes started by Anthony in /Users/Anthony/IdeaProjects/ms3)
+2019-07-02 12:48:21.020  INFO 51083 --- [restartedMain] com.example.ms3.Ms3Application           : No active profile set, falling back to default profiles: default
+2019-07-02 12:48:21.600  INFO 51083 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-02 12:48:21.603  INFO 51083 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-02 12:48:26.231  INFO 51083 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-02 12:48:26.605  INFO 51083 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 323ms. Found 1 repository interfaces.
+2019-07-02 12:48:28.022  INFO 51083 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a7ef43b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-02 12:48:29.302  INFO 51083 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-02 12:48:29.509  INFO 51083 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-02 12:48:29.510  INFO 51083 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-02 12:48:29.948  INFO 51083 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-02 12:48:29.949  INFO 51083 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8345 ms
+2019-07-02 12:48:30.422  INFO 51083 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-02 12:48:30.985  INFO 51083 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-02 12:48:31.108  INFO 51083 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-07-02 12:48:31.301  INFO 51083 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-07-02 12:48:31.305  INFO 51083 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-07-02 12:48:31.609  INFO 51083 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-07-02 12:48:31.925  INFO 51083 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-02 12:48:33.349  INFO 51083 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@338cb584'
+2019-07-02 12:48:33.355  INFO 51083 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-02 12:48:33.434  INFO 51083 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-02 12:48:34.525  INFO 51083 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-02 12:48:34.614  WARN 51083 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-02 12:48:34.848  INFO 51083 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-02 12:48:35.265  INFO 51083 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-02 12:48:35.272  INFO 51083 --- [restartedMain] com.example.ms3.Ms3Application           : Started Ms3Application in 15.772 seconds (JVM running for 18.607)
+2019-07-02 12:48:40.369  INFO 51083 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-02 12:48:40.370  INFO 51083 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-02 12:48:40.398  INFO 51083 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2019-07-02 12:50:49.522  INFO 51083 --- [http-nio-8080-exec-3] com.example.ms3.LoggingController        : Number of records successful 4869
+2019-07-02 12:50:49.526  INFO 51083 --- [http-nio-8080-exec-3] com.example.ms3.LoggingController        : Number of Failed Records 1132
+2019-07-02 12:50:49.526  INFO 51083 --- [http-nio-8080-exec-3] com.example.ms3.LoggingController        : Number of All Records 6002
