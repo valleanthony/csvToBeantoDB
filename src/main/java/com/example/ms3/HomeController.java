@@ -4,6 +4,7 @@ import com.opencsv.CSVReader;
 import com.opencsv.bean.CsvToBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
@@ -51,6 +52,13 @@ public class HomeController {
         return "work";
     }
 
+    @RequestMapping("/check")
+    public String checkDB(Model model){
+        int myInt =3;
+        model.addAttribute("checkMe",dataRepo.findById(myInt));
+
+        return "check";
+    }
 
 
 }
